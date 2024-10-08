@@ -1,2 +1,4 @@
 package cusufcan
 
+class TwoSum {
+}
