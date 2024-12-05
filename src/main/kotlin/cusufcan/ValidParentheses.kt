@@ -1,6 +1,6 @@
 package cusufcan
 
-import java.util.Stack
+import java.util.*
 
 class ValidParentheses {
     fun isValid(s: String): Boolean {
@@ -10,7 +10,7 @@ class ValidParentheses {
             if (c == '(' || c == '{' || c == '[') {
                 result.push(c)
             } else {
-                if (result.isEmpty) return false
+                if (result.isEmpty()) return false
                 val removedChar = result.pop()
                 if (c == ')' && removedChar != '(') return false
                 if (c == '}' && removedChar != '{') return false
@@ -18,7 +18,7 @@ class ValidParentheses {
             }
         }
 
-        return result.isEmpty
+        return result.isEmpty()
     }
 }
 
