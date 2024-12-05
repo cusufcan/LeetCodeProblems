@@ -21,7 +21,3 @@ class ValidParentheses {
         return result.isEmpty()
     }
 }
-
-fun main(args: Array<String>) {
-    println(ValidParentheses().isValid("((({()})))"))
-}
